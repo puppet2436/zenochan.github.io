@@ -1,0 +1,30 @@
+<ion-view view-title="微信客户" class="cus-wechat">
+  <ion-content>
+    <ion-refresher on-refresh="refresh()"></ion-refresher>
+    <p ng-if="model.initialized && model.cusWechat.length == 0" class="empty">
+      您还没有微信客户
+    </p>
+    <ion-list>
+      <ion-item class="relative" ng-repeat="item in model.cusWechat">
+        <img class="headimg" ng-src="{{wechatHeadImg(item.headimgurl,64)}}"/>
+        <h6 class="nickname" ng-bind="item.nickname"></h6>
+        <img class="icon-wechat"
+             ng-src="{{item.subscribe == 1?'./img/wechat_on.png':'./img/wechat_off.png'}}"/>
+
+        <p class="wechat-sub" ng-bind="item.subscribe == 1?'已关注':'未关注'"></p>
+
+
+        <!--<img class="icon-wechat"-->
+             <!--ng-src="{{item.buyerID != 0?'./img/churgo_on.png':'./img/churgo_off.png'}}"/>-->
+        <!--<p class="buyer-name">{{item.buyerID !=0?(item.name || "已注册"):"未注册"}}</p>-->
+
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+        ng-if="model.cusWechat.length < model.total"
+        on-infinite="getCusWechat()"
+    ></ion-infinite-scroll>
+
+  </ion-content>
+</ion-view>
+

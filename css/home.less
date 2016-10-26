@@ -1,0 +1,109 @@
+@import "style";
+
+.home {
+  background: @colorBg;
+  .header {
+    margin-bottom: -6px;
+  }
+
+  .avatar {
+    top: 50%;
+    left: 50%;
+    width: 96px;
+    height: 96px;
+    margin-left: -48px;
+    margin-top: -48px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .mobile {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 56px;
+    text-shadow: #3f0b17 4px 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .qrcode {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+    top: 50%;
+    left: 50%;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  .row {
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .item {
+    flex: 0 0 33.8%;
+    max-width: 33.8%;
+
+    h6, span {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #646464;
+    }
+
+    span {
+      font-size: 18px;
+      color: #58574b;
+      font-weight: 600;
+    }
+
+  }
+
+  .subscribe {
+    background: rgba(9, 187, 7, 0.2);
+  }
+
+  .unsubscribe {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .buyer {
+    background: rgba(216, 44, 59, 0.2);
+  }
+
+  .order-total {
+    padding: 16px;
+    background: #FDD19B;
+    margin-top: 16px;
+
+    .label {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .price {
+      width: 100%;
+      text-align: left;
+      display: block;
+      font-size: 24px;
+      color: red;
+      margin-top: 8px;
+    }
+  }
+
+  *:link {
+    color: #ffffff;
+  }
+
+}
+
+//# sourceURL=home.less

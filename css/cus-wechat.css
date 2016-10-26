@@ -1,0 +1,27 @@
+.cus-wechat .headimg {
+  width: 64px;
+  height: 64px;
+}
+.cus-wechat .nickname {
+  position: absolute;
+  top: 16px;
+  left: 96px;
+  color: #586C94;
+  font-size: 14px;
+}
+.cus-wechat .icon-wechat {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+.cus-wechat .wechat-sub,
+.cus-wechat .signin,
+.cus-wechat .buyer-name {
+  height: 16px;
+  font-size: 12px;
+  display: inline-block;
+  color: #414141;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 0;
+}
