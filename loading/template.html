@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      // 在 head 加上如下代码
+      window.loadingStartTime = new Date();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
+
+    <title>Loading</title>
+    <link href="./loading.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="loading_container" id="loadingBox">
+      <div class="runner">
+        <img class="red" id="runner" src="./runner.gif">
+      </div>
+      <div class="process">
+        <div id="process" class="processing"></div>
+      </div>
+      <div class="loading__text">
+        <span class="loading__number" id="loadingNumber">0%</span>
+        <img class="tip" src="./loading.png"/>
+      </div>
+    </div>
+    <script src="./loading.js"></script>
+
+    <img src="https://i0.hdslb.com/bfs/activity-plat/activity8712/images/x64n4rwmjq.png" hidden>
+  </body>
+</html>
