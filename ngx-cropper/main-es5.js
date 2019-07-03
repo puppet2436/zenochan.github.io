@@ -41,7 +41,7 @@ module.exports = "<label for=\"file\" [hidden]=\"fileOrUrl\">\n  <ngx-file-drop 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a target=\"_blank\" href=\"https://github.com/zenochan/ngx-cropper\">Github</a>\n<zz-ngx-cropper\n    [aspectRatio]=\"1\"\n    [file]=\"fileOrUrl\"\n    (cropped)=\"cropped($event)\">\n\n</zz-ngx-cropper>\n"
+module.exports = "<a  class=\"github\" target=\"_blank\" href=\"https://github.com/zenochan/ngx-cropper\">Github</a>\n<zz-ngx-cropper\n  #cropper\n  style=\"width: 600px;height: 600px;float: left\"\n  [aspectRatio]=\"1\"\n  [file]=\"fileOrUrl\"\n  (cropped)=\"cropped($event)\">\n\n</zz-ngx-cropper>\n\n<div *ngIf=\"cropper.croppedImage\">\n  <img class=\"preview\" style=\"width: 200px;height: 200px;display: inline-block\" [src]=\"cropper.croppedImage\">\n  <img class=\"preview\" style=\"width: 160px;height: 160px;display: inline-block\" [src]=\"cropper.croppedImage\">\n  <img class=\"preview\" style=\"width: 120px;height: 120px;display: inline-block\" [src]=\"cropper.croppedImage\">\n  <img class=\"preview\" style=\"width: 80px;height: 80px;display: inline-block\" [src]=\"cropper.croppedImage\">\n</div>\n"
 
 /***/ }),
 
@@ -255,7 +255,7 @@ var NgxCropperModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".github {\n  background: orange;\n  color: white;\n  text-align: center;\n  line-height: 2em;\n  width: 200px;\n  position: fixed;\n  right: -50px;\n  top: 30px;\n  font-size: 24px;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.preview {\n  margin-left: 18px;\n  border-radius: 8px;\n  border: 2px solid lightgray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy96ZW5vY2hhbi9aLlByb2plY3QvQW5ndWxhclgvMTkwNi1uZ3gtY3JvcHBlci1saWIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLFlBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGdDQUFBO1VBQUEsd0JBQUE7QUNDRjs7QURFQTtFQUNFLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSwyQkFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmdpdGh1YiB7XG4gIGJhY2tncm91bmQ6IG9yYW5nZTtcbiAgY29sb3I6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGxpbmUtaGVpZ2h0OiAyZW07XG4gIHdpZHRoOiAyMDBweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuICByaWdodDogLTUwcHg7XG4gIHRvcDogMzBweDtcbiAgZm9udC1zaXplOiAyNHB4O1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG5cbi5wcmV2aWV3IHtcbiAgbWFyZ2luLWxlZnQ6IDE4cHg7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgYm9yZGVyOiAycHggc29saWQgbGlnaHRncmF5O1xufVxuIiwiLmdpdGh1YiB7XG4gIGJhY2tncm91bmQ6IG9yYW5nZTtcbiAgY29sb3I6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGxpbmUtaGVpZ2h0OiAyZW07XG4gIHdpZHRoOiAyMDBweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuICByaWdodDogLTUwcHg7XG4gIHRvcDogMzBweDtcbiAgZm9udC1zaXplOiAyNHB4O1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG59XG5cbi5wcmV2aWV3IHtcbiAgbWFyZ2luLWxlZnQ6IDE4cHg7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgYm9yZGVyOiAycHggc29saWQgbGlnaHRncmF5O1xufSJdfQ== */"
 
 /***/ }),
 
