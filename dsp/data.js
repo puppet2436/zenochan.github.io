@@ -213,7 +213,7 @@ var data={
                 id:"Fe",
                 count:2
             },{
-                id:"magnet",
+                id:"coil",
                 count:1
             },{
                 id:"gear",
